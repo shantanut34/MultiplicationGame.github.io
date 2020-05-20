@@ -1,0 +1,148 @@
+html{
+	height:100%;
+	width: 100%;
+	background: radial-gradient(circle,red,black);
+}
+#container{
+	height:400px;
+	width:550px;
+	/*background-color:#9DD2EA;*/
+	background: radial-gradient(circle,brown,black);
+	margin: 100px auto;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0px 4px 0px #009de4;
+	position: relative;
+}
+#score{
+	background-color: #F1FF92;
+	color :black;
+	padding: 10px ;
+	position: absolute;
+	left: 500px ;
+	box-shadow: 0px 4px 0px #9da853 ; 
+}
+#correct{
+	position: absolute;
+	left:250px;
+	background-color: green;
+	color:white;
+	padding: 11px;
+	display: none;
+}
+#wrong{
+	position: absolute;
+	left:260px;
+	background-color: red;
+	color:white;
+	padding: 11px;
+	display: none;
+}
+#question{
+	background-color: black;
+	/*background: linear-gradient(yellow,pink,orange);*/
+	height: 120px ;
+	width: 500px;
+	margin: 50px auto 10px auto;
+	color: #faed27;
+	font-size: 100px ;
+	text-align: center;
+	/*box-shadow: 0px 4px 0px black;*/
+	box-shadow: 0 0 10px #faed27, 0 0 40px #faed27, 0 0 40px #faed27;
+	font-family: consolas;
+
+}
+#response{
+	background-color: purple;
+	height: 50px ;
+	width: 500px;
+	margin: 10px auto 10px auto;
+	color: black;
+	text-align: center;
+	box-shadow: 0px 4px 0px black;
+	line-height: 50px;
+	font-size: 20px;
+	font-family: consolas;
+
+
+}
+#choices{
+	height: 100px ;
+	width: 500px;
+	margin: 10px auto 10px auto;
+
+}
+.box{
+	background-color: white;
+	height: 85px;
+	width: 85px;
+	float: left;
+	margin : 5px 53px 0px 0px ;
+	color: black;
+	cursor: pointer;
+	border-radius: 4px;
+	text-align: center;
+	line-height: 90px;
+	box-shadow: 0px 4px 0px black;
+	font-size: 25px;
+	position: relative;
+	transition: all 0.2s;
+
+}
+#box4{
+	margin-right: 0px;
+}
+.box:hover, #startreset:hover{
+	background-color: #9C89F6;
+	color :white;
+	box-shadow: 0px 4px 0px black;
+
+}
+.box:active, #startreset:active{
+	box-shadow: 0px 0px 0px black;
+	top:4px;
+
+}
+#startreset{
+	background-color: black;
+	width: 100px;
+	margin : 0px auto 0px auto ;
+	cursor: pointer;
+	border-radius: 4px;
+	text-align: center;
+	/*box-shadow: 0px 4px 0px black;*/
+	box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 40px #2196f3;
+	padding: 10px;
+	transition: all 0.2s;
+	position: relative;
+	color: #2196f3;
+
+}
+#timeremaining{
+	background-color: green;
+	border-radius: 4px;
+	text-align: center;
+	box-shadow: 0px 4px 0px black;
+	padding: 10px;
+	position: absolute;
+	bottom: 33px;
+	left: 400px;
+	display: none;
+
+
+}
+#gameover{
+	background: linear-gradient(red, orange);
+	width: 500px;
+	margin:  0px auto 1000px auto ;
+	color: white;
+	font-size: 40px ;
+	text-align: center;
+	box-shadow: 0px 4px 0px black;
+	position: absolute;
+	top: 100px;
+	left:45px;
+	display: none;
+	text-transform: uppercase;
+
+}
